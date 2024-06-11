@@ -15,13 +15,13 @@
             c
         </li></ol>
         <form>
-            <table>
+            <table border="1" cellpadding="10">
                 <tr>
                     <td>
                         <label for="firstName">First Name</label>
                     </td>
                     <td>
-                        <input type="text" id="firstName" name="firstName"><br>
+                        <input type="text" id="firstName" name="firstName">
                     </td>
                 </tr>
                 <tr>
@@ -29,7 +29,7 @@
                         <label for="lastName">Last Name</label>
                     </td>
                     <td>
-                        <input type="text" id="lastName" name="lastName"><br>
+                        <input type="text" id="lastName" name="lastName">
                     </td>
                 </tr>
                 <tr>
@@ -37,7 +37,7 @@
                         <label for="phoneNumber">Phone Number</label>
                     </td>
                     <td>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
                     </td>
                 </tr>
                 <tr>
@@ -45,7 +45,7 @@
                         <label for="date">Date</label>
                     </td>
                     <td>
-                        <input type="date" id="date" name="date"><br>
+                        <input type="date" id="date" name="date">
                     </td>
                 </tr>
                 <tr>
@@ -56,7 +56,7 @@
                         <input type="radio" id="male" name="gender" value="male">
                         <label for="male">Male</label><br>
                         <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label><br>
+                        <label for="female">Female</label>
                     </td>
                 </tr>
                 <tr>
@@ -64,14 +64,40 @@
                         <input type="submit" value="Submit">
                     </td>
                 </tr>
+            
+        
+            
+                <tr>
+                    <td>
+                        <label for="language1">Code Language - Python</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language1" name="language1" value="python">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="language2">Code Language - C++</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language2" name="language2" value="c++">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="language3">Code Language - C</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="language3" name="language3" value="c">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="myfile">Select a file:</label>
+                        <input type="file" id="myfile" name="myfile">
+                    </td>
+                </tr>
             </table>
-            <label for="gender">language</label><br>
-            <input type="checkbox" id="language1 " name="vehicle1" value="python">
-            <label for="language1"> code language- python</label><br>
-            <input type="checkbox" id="language2" name="vehicle2" value="c++">
-            <label for="language2">  code language-c++</label><br>
-            <input type="checkbox" id="language3" name="vehicle3" value="c">
-            <label for="language">  code language-c</label>
         </form>
     </body>
 </html>
