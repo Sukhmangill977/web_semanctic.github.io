@@ -1,0 +1,134 @@
+.container{
+    width:1170px;
+    height:auto;
+    margin:0 auto;
+}
+
+.container .header{
+    width:1170px;
+    height:100px;
+    background-color:#0000ff;
+}
+
+.container .contentrow{
+    width:1170px;
+    height:auto;
+}
+
+.container .contentrow .C1{
+    width:292px;
+    height:125px;
+    background-color: #ffebcd;
+    float:left;
+}
+
+.container .contentrow .C2{
+    width:293px;
+    height:125px;
+    background-color:#00ffff;
+    float:left;
+}
+
+.container .contentrow .C3{
+    width:292px;
+    height:125px;
+    background-color:#7fffd4;
+    float:left;
+}
+
+.container .contentrow .C4{
+    width:293px;
+    height:125px;
+    background-color:#ffd700;
+    float:left;
+}
+
+.container .contentrow2{
+    width:1170px;
+    height:auto;
+}
+
+.container .contentrow2 .C5{
+    width:292px;
+    height:150px;
+    background-color: #008000;
+    float:left;
+}
+
+.container .contentrow2 .C6{
+    width:293px;
+    height:150px;
+    background-color: #d87093;
+    float:left;
+}
+
+.container .contentrow2 .C7{
+    width:585px;
+    height:150px;
+    background-color: #9acd32;
+    float:left;
+}
+
+.container .contentrow3{
+    width:1170px;
+    height:auto;
+}
+
+.container .contentrow3 .C8{
+    width:585px;
+    height:150px;
+    background-color:#f08080;
+    float:left;
+}
+
+.container .contentrow3 .C9{
+    width:292px;
+    height:150px;
+    background-color: #008000;
+    float:left;
+}
+
+.container .contentrow3 .C10{
+    width:293px;
+    height:150px;
+    background-color: #d87093;
+    float:left;
+}
+
+.container .contentrow4{
+    width:1170px;
+    height:auto;
+}
+
+.container .contentrow4 .C11{
+    width:292px;
+    height:175px;
+    background-color:#e0ffff;
+    float:left;
+}
+
+.container .contentrow4 .C12{
+    width:585px;
+    height:175px;
+    background-color:#ffb6c1;
+    float:left;
+}
+
+.container .contentrow4 .C13{
+    width:293px;
+    height:175px;
+    background-color: #20b2aa;
+    float:left;
+}
+
+
+.container .contentrow5{
+    width:1170px;
+    height:auto;
+}
+.container .contentrow5 .C15{
+    width:1170px;
+    height:180px;
+    background-color: #0000ff;
+    float:left;
+}
