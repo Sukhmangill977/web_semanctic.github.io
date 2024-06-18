@@ -284,28 +284,159 @@
  
 }
 
-.container .row9 .content16 img{
-    width: 300px;
+.container .row9 .content16 {
+    width: 275px;
     height: 300px;
-    margin: 0px 5px;
-    margin-top: 170px;
-    background-color: #c1c1c1;
-
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 150px;
+    text-align: left;
+    margin-left: 20px;
+    
 }
 
 .container .row9 .content17 img{
-    width: 250px;
-    height: 320px;
-    margin: 0px 300px;
-    margin-top: -390px;
+    width: 200px;
+    height: 390px;
+    margin: 0px 330px;
+    margin-top: -270px;
 }
-.container .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Increased padding to increase height */
-    font-size: 20px;
-    position: fixed;
-    width: 450px;
-    bottom: 0;
+
+.container .row10 {
+    width: 560px;
+    height: 400px;
+}
+
+.container .row10 .content18{
+    margin-top: 550px;
+    height: 20px;
+    width: 180px;
+    margin-left: 190px;
+}
+
+.container .row10 .content19 img{
+    width: 130px;
+    height: 100px;
+    margin: 10px 20px;
+    margin-top:80px;
+    float: left;
+}
+
+.container .row10 .content20 img{
+    width: 130px;
+    height: 100px;
+    margin: 10px 15px;
+    margin-top:80px;
+    float: left;
+}
+
+.container .row10 .content21 img{
+    width: 130px;
+    height: 100px;
+    margin: 10px 25px;
+    margin-top:80px;
+    float: left;
+}
+
+.container .row11 {
+    width: 560px;
+    height: 400px;
+}
+.container .row11 .content22{
+    width: 120px;
+    height: 80px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 8.9px;
+    
+}
+
+.container .row11 .content23{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    float: left;
+    font-size: 8.9px;
+    margin-left: 55px;
+}
+.container .row11 .content24{
+    width: 120px;
+    height: 100px;
+    float: left;
+    font-size: 8.9px;
+    margin-top: -100px;
+    margin-left: 380px;
+}
+
+.container .row12{
+    width: 560px;
+    height: 400px;
+ 
+}
+
+.container .row12 .content25 {
+    width: 275px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+.container .row12 .content25 button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+    margin-left: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+}
+
+.container .row12 .content26 img{
+    width: 200px;
+    height: 350px;
+    margin-left: 310px;
+    margin-top: -380px;
+}
+
+.footer{
+    width: 520px;
+    height: 280px;
+    background-color: grey;
+    margin-left: 250px;
+    
+}
+.footer .section1{
+    width: 520px;
+    height: 150px;
+    margin-top: 500px;
+    margin-left: 20px;
+}
+
+.footer .section2{
+    width: 520px;
+    height: 150px;
+    margin-top: -150px;
+    margin-left: 110px;
+}
+.footer .section3{
+    width: 520px;
+    height: 150px;
+    margin-top: -170px;
+    margin-left: 245px;
+}
+.footer .section4{
+    width: 520px;
+    height: 150px;
+    margin-top: -170px;
+    margin-left: 375px;
+}
+.footer .section5{
+    width: 520px;
+    height: 150px;
+    margin-top: 60px;
+    margin-left: 80px;
 }
