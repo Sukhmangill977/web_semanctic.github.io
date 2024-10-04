@@ -1,85 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Diary</title>
-</head>
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        
-    }
-    .content-box {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        max-width: 1200px;
-        width: 100%;
-    }
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-    p {
-        line-height: 1.6;
-        color: #555;
-    }
-    .button-container {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .action-button {
-        padding: 10px 20px;
-        font-size: 16px;
-        color: #fff;
-        background-color: #007BFF;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .action-button:hover {
-        background-color: #0056b3;
-    }
-    .action-button a {
-        color: #fff;
-        text-decoration: none;
-    }
-</style>
+    <title>Daily Diary - Day 14</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif;
+            background-color: #ccd1d3;
+        }
+        .content-box {
+            background-color: #fff;
+            padding: 30px; /* Increased padding for better spacing */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Set a maximum width for better readability */
+            width: 90%; /* Make it responsive */
+            animation: fadeIn 0.6s ease-in-out; /* Added fade-in animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px; /* Space below heading */
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px; /* Space below the paragraph */
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .action-button {
+            padding: 12px 25px; /* Increased padding for a more prominent button */
+            font-size: 18px; /* Slightly larger font size */
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+        }
+        .action-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            transform: translateY(-2px); /* Slight upward movement on hover */
+        }
+        .action-button a {
+            color: #fff; /* Ensure link text is white */
+            text-decoration: none; /* Remove underline from link */
+        }
+    </style>
 </head>
 <body>
-<div class="content-box">
-    <h1>Day 14</h1>
-    <p>
-        Data centralised<br>
-        Push all the data into one repository<br>
-        Steps for GitHub:<br>
-        - Push<br>
-        - Fork<br>
-        - Clone<br>
-        - 2 repositories: yours and clone<br>
-        - Create a pull request<br>
-        - Merge it (into main repository)<br><br>
+    <div class="content-box">
+        <h1>Day 14</h1>
+        <p>
+            Data centralised<br>
+            Push all the data into one repository<br>
+            Steps for GitHub:<br>
+            - Push<br>
+            - Fork<br>
+            - Clone<br>
+            - 2 repositories: yours and clone<br>
+            - Create a pull request<br>
+            - Merge it (into the main repository)<br><br>
 
-        All these are version control systems<br>
-        Using command line:<br>
-        - Git init<br>
-        - Git space.<br><br>
+            All these are version control systems<br>
+            Using command line:<br>
+            - Git init<br>
+            - Git space.<br><br>
 
-        Make folder or use branches<br>
-        Merge sometimes causes conflicts<br>
-        One-time authentication<br>
-        TOTP (Time-based One-Time Password)<br>
-        Research on it (Authy)<br>
-    </p>
-</div>        
+            Make folder or use branches<br>
+            Merge sometimes causes conflicts<br>
+            One-time authentication<br>
+            TOTP (Time-based One-Time Password)<br>
+            Research on it (Authy)<br>
+        </p>
+        <div class="button-container">
+            <button class="action-button"><a href="task-link.html">Go to Task</a></button>
+        </div>
+    </div>        
 </body>
 </html>
