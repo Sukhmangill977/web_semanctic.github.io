@@ -57,6 +57,55 @@
             background-color: #0056b3;
             transform: translateY(-3px);
         }
+        #image-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #image-container img {
+            width: 200px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        #image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Modal Styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            position: relative;
+            width: 80%;
+            max-width: 700px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .modal img {
+            width: 100%;
+            height: auto;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -75,8 +124,64 @@
             - <strong>Wappalyzer:</strong> A browser extension that identifies technologies used on websites, such as frameworks, analytics tools, and content management systems.<br>
         </p>
         <div class="button-container">
-            <button class="action-button"><a href="your-link-here" style="color: #ffffff; text-decoration: none;">Explore More</a></button>
+            <button id="explore-more-button" class="action-button">Explore More</button>
         </div>
-    </div>       
+        <div id="image-container"></div> <!-- Empty container for images -->
+    </div>
+
+    <!-- Modal for enlarged image -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-image" src="" alt="Enlarged Image">
+        </div>
+    </div>
+
+    <script>
+        // Function to load images when 'Explore More' is clicked
+        document.getElementById('explore-more-button').addEventListener('click', function() {
+            const imageContainer = document.getElementById('image-container');
+            
+            // Clear the container before adding new images
+            imageContainer.innerHTML = '';
+
+            // List of image names from the root directory
+            const images = ['i1.png','i2.png', 'i3.png'];
+
+            // Loop through the images array and create image elements
+            images.forEach(imageName => {
+                const img = document.createElement('img');
+                img.src = `./${imageName}`; // Assuming images are in the root directory
+                img.alt = imageName;
+                img.addEventListener('click', function() {
+                    openModal(img.src); // Open modal on image click
+                });
+                imageContainer.appendChild(img);
+            });
+        });
+
+        // Modal elements
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image');
+        const closeBtn = document.getElementsByClassName('close-btn')[0];
+
+        // Function to open the modal and display the clicked image
+        function openModal(src) {
+            modal.style.display = 'flex'; // Show modal
+            modalImg.src = src; // Set the image in the modal
+        }
+
+        // Close the modal when the 'x' button is clicked
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // Close the modal if clicked outside the image area
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
